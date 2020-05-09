@@ -1,11 +1,8 @@
 package com.zyyoona7.sample;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
-import com.zyyoona7.lock.GestureLockLayout;
+import androidx.appcompat.app.AppCompatActivity;
 
 import me.yokeyword.fragmentation.SupportActivity;
 

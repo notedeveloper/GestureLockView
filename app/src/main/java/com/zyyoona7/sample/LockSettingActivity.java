@@ -3,7 +3,7 @@ package com.zyyoona7.sample;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.zyyoona7.lock.GestureLockDisplayView;

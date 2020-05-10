@@ -8,7 +8,6 @@ import android.app.Application;
 
 public class MyApplication extends Application {
 
-    public long currentTime=System.currentTimeMillis();
     public String answer="";
     public boolean isUnlock=false;
     private static MyApplication mInstance;

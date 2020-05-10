@@ -1,5 +1,7 @@
 package com.zyyoona7.sample;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -83,6 +85,17 @@ public class LockSettingActivity extends AppCompatActivity {
                     //两次答案一致，保存
                     MyApplication.getInstance().answer = answerList.toString();
                     MyApplication.getInstance().isUnlock = false;
+
+                    // 持久化
+                    SharedPreferences shp = getSharedPreferences("myApp", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = shp.edit();
+                    editor.putString("ANSWER", answerList.toString());
+                    editor.apply();
+
+
+
+
+
                     finish();
                 } else {
                     resetGesture();
